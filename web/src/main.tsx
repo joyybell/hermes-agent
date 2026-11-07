@@ -1,10 +1,8 @@
-const http = require('http');
+import http from 'http';
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hermes AI is running\n');
 }).listen(process.env.PORT || 10000);
-
-
 
 
 import { createRoot } from "react-dom/client";
